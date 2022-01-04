@@ -68,8 +68,22 @@ E池
 
 ssl矿池
 
+E池
 
-ssl://asia2.ethermine.org:5555        //E池     
-ssl://eth-sg.flexpool.io:5555         //flexpool
-ssl://asia-eth.2miners.com:12020      //2miner
-ssl://hk-eth.hiveon.net:24443         //hiveon
+>    ssl://asia2.ethermine.org:5555
+
+
+凤池
+
+>    ssl://eth-sg.flexpool.io:5555
+
+2miner
+
+
+>    ssl://asia-eth.2miners.com:12020
+
+
+hiveon
+
+
+>    ssl://hk-eth.hiveon.net:24443
