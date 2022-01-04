@@ -1,5 +1,16 @@
 Linux运行
 >      git clone https://github.com/steamasq1/Minerproxy.git
+
+提示bash: git: command not found的先安装git
+
+ubuntu下
+>      apt update
+>      apt install git
+
+
+centos下
+>      yum update
+>      yum install git
 安装完进入目录
 >      cd Minerproxy
 后台运行
