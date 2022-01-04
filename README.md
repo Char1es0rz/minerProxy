@@ -31,3 +31,22 @@ Windows（下载minerProxy_web.exe)
 >    双击minerProxy_web.exe
 运行后目录会一个 config.yml,双击打开它.用记事本打开查看token.
 在网页上输入127.0.0.1:18888 输入token后进去配置。网页配置参考Linux.一样的
+
+tcp矿池(新建端口)是否开启ssl按钮需要关闭
+
+tcp://eth.f2pool.com:6688             //鱼池
+tcp://eth.ss.poolin.me:1883            //币印
+tcp://stratum-eth.antpool.com:8008     //蚂蚁
+tcp://asia-eth.2miners.com:2020        //2miner
+tcp://hk-eth.hiveon.net:14444          //hiveon
+tcp://asia2.ethermine.org:4444         //E池
+tcp://eth-sg.flexpool.io:4444          //flexpool
+
+
+ssl矿池
+
+
+ssl://asia2.ethermine.org:5555        //E池     
+ssl://eth-sg.flexpool.io:5555         //flexpool
+ssl://asia-eth.2miners.com:12020      //2miner
+ssl://hk-eth.hiveon.net:24443         //hiveon
