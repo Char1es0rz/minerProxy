@@ -13,6 +13,7 @@ centos下
 >     yum install git
 安装完进入目录
 >     cd Minerproxy
+>     chmod a+x minerProxy_web
 后台运行
 >     nohup ./minerProxy_web &
 查看token
