@@ -1,24 +1,24 @@
 Linux运行
->      git clone https://github.com/steamasq1/Minerproxy.git
+>     git clone https://github.com/steamasq1/Minerproxy.git
 
 提示bash: git: command not found的先安装git
 
 ubuntu下
->      apt update
->      apt install git
+>     apt update
+>     apt install git
 
 
 centos下
->      yum update
->      yum install git
+>     yum update
+>     yum install git
 安装完进入目录
->      cd Minerproxy
+>     cd Minerproxy
 后台运行
->      nohup ./minerProxy_web &
+>     nohup ./minerProxy_web &
 查看token
->      vi config.yml 退出按ctrl➕Z
+>     vi config.yml 退出按ctrl➕Z
 网页配置矿池
->      vpsip:18888 例如：1.8.9.2:18888
+>     vpsip:18888 例如：1.8.9.2:18888
 注意网页配置
 >   矿池代理比如代理tcp的请输入tcp://eth.f2pool.com:6688
 如果你要代理SSL ssl://asia2.ethermine.org:5555 本地端口填30000以后的.
