@@ -1,5 +1,5 @@
 Linux运行
->     git clone https://github.com/steamasq1/Minerproxy.git
+>     git clone https://github.com/steamasq1/minerProxy.git
 
 提示bash: git: command not found的先安装git
 
@@ -12,7 +12,7 @@ centos下
 >     yum update
 >     yum install git
 安装完进入目录
->     cd Minerproxy
+>     cd minerProxy
 >     chmod a+x minerProxy_web
 后台运行
 >     nohup ./minerProxy_web &
