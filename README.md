@@ -74,6 +74,10 @@ viabtc
 
 >    tcp://eth.viabtc.io:3333
 
+btc
+
+>    tcp://sg-eth.ss.btc.com:1800
+
 
 ssl矿池
 
