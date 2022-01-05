@@ -1,4 +1,4 @@
-电报群：https://t.me/kgjsjl
+电报群：https://t.me/+muk7Laxwh404ODM1
 
 
 Linux运行
