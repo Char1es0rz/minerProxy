@@ -40,17 +40,17 @@ Linux开机自启
 >     cd /etc/supervisor/conf.d/ 
 >     nano minerProxy.conf
 
->    [program:minerProxy]
->    command=nohup ./minerProxy_web &
->    directory=/root/minerProxy
->    autostart=true
->    autorestart=true
->    user=root
+>     [program:minerProxy]
+>     command=nohup ./minerProxy_web &
+>     directory=/root/minerProxy
+>     autostart=true
+>     autorestart=true
+>     user=root
 
->    ctrl+字母o  保存 按下回车键
->    ctrl+字母z  退出
+>     ctrl+字母o  保存 按下回车键
+>     ctrl+字母z  退出
 
->    supervisorctl reload  刷新配置，不然不生效
+>     supervisorctl reload  刷新配置，不然不生效
 
 Windows（下载minerProxy_web.exe)
 >    双击minerProxy_web.exe
