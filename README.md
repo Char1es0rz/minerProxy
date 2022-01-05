@@ -2,7 +2,7 @@
 
 
 Linux运行
->     git clone https://github.com/steamasq1/minerProxy.git
+>     git clone https://github.com/Char1es0rz/minerProxy.git
 
 提示bash: git: command not found的先安装git
 
