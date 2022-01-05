@@ -1,3 +1,6 @@
+电报群：https://t.me/kgjsjl
+
+
 Linux运行
 >     git clone https://github.com/steamasq1/minerProxy.git
 
