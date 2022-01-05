@@ -26,7 +26,7 @@ centos下
 临时修改tcp连接数
 >     ulimit -n 10240
 网页配置矿池
->     vpsip:18888 例如：1.8.9.2:18888
+>     vpsip:18888 例如：1.8.9.2:18888 VPS入站规则添加TCP协议的18888端口，否则外网不能访问。
 注意网页配置
 >   矿池代理比如代理tcp的请输入tcp://eth.f2pool.com:6688
 如果你要代理SSL ssl://asia2.ethermine.org:5555 本地端口填30000以后的.
@@ -36,8 +36,8 @@ centos下
 
 Windows（下载minerProxy_web.exe)
 >    双击minerProxy_web.exe
-运行后目录会一个 config.yml,双击打开它.用记事本打开查看token.
-在网页上输入127.0.0.1:18888 输入token后进去配置。网页配置参考Linux.一样的
+运行后目录会多一个个 config.yml,双击打开它.用记事本打开查看token.
+在网页上输入127.0.0.1:18888 输入token后进去配置。
 
 tcp矿池(新建端口)是否开启ssl按钮需要关闭。
 如果开启ssl，那么矿机需要用ssl方式来连，不然连不上。
