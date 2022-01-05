@@ -23,6 +23,8 @@ centos下
 >     tail -f nohup.out 查看后退出按ctrl+c
 查看token
 >     vi config.yml 退出按ctrl➕Z
+临时修改tcp连接数
+>     ulimit -n 10240
 网页配置矿池
 >     vpsip:18888 例如：1.8.9.2:18888
 注意网页配置
