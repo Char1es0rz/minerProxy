@@ -16,6 +16,8 @@ centos下
 >     chmod a+x minerProxy_web
 后台运行
 >     nohup ./minerProxy_web &
+后台运行时查看
+>     tail -f nohup.out
 查看token
 >     vi config.yml 退出按ctrl➕Z
 网页配置矿池
