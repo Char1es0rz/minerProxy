@@ -70,7 +70,9 @@ E池
 凤池        
 >    tcp://eth-sg.flexpool.io:4444          
 
+viabtc
 
+>    tcp://eth.viabtc.io:3333
 
 
 ssl矿池
