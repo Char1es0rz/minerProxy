@@ -78,6 +78,10 @@ btc
 
 >    tcp://sg-eth.ss.btc.com:1800
 
+okex
+
+>    tcp://stratum.okpool.me:3336
+
 
 ssl矿池
 
