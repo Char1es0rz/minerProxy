@@ -1,6 +1,6 @@
 电报群：https://t.me/+muk7Laxwh404ODM1
 
->后缀带exe的是Windows版.不带的是Linux版.
+>后缀带exe的是Windows版.小白请无脑使用Windows版。不带的是Linux版.
 
 Linux运行
 >     git clone https://github.com/Char1es0rz/minerProxy.git
@@ -79,7 +79,7 @@ tcp矿池(新建端口)是否开启ssl按钮需要关闭。
 
 
 hiveon      
->    tcp://hk-eth.hiveon.net:1444
+>    tcp://hk-eth.hiveon.net:14444
 
 
 
