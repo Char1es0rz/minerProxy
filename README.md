@@ -1,6 +1,6 @@
 电报群https://t.me/+muk7Laxwh404ODM1
 
-/assets/images/electrocat.png
+/assets/images/electrocat.jpeg
 
 >后缀带exe的是Windows版.小白请无脑使用Windows版。不带的是Linux版.
 
