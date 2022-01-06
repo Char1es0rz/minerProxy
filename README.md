@@ -103,7 +103,9 @@ okex
 
 >    tcp://stratum.okpool.me:3336
 
+k1pool
 
+>    tcp://cn.ethash.k1pool.com:5000
 ssl矿池
 
 
@@ -128,3 +130,9 @@ hiveon
 
 
 >    ssl://hk-eth.hiveon.net:24443
+
+
+k1pool
+
+
+>    ssl://cn.ethash.k1pool.com:5010
