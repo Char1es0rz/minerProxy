@@ -60,7 +60,7 @@ Windows（下载minerProxy_web.exe)
 tcp矿池(新建端口)是否开启ssl按钮需要关闭。
 如果开启ssl，那么矿机需要用ssl方式来连，不然连不上。
 
-
+![img](https://github.com/Char1es0rz/minerProxy/blob/8920df43314d377045dd3dfd678af822f439ea62/0AA73154-62BE-44EF-A359-248317C2802C.png)
 
 鱼池
 >    tcp://eth.f2pool.com:6688
