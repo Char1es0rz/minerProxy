@@ -14,7 +14,7 @@ _magenta() { echo -e ${magenta}$*${none}; }
 _cyan() { echo -e ${cyan}$*${none}; }
 
 # Root
-[[ $(id -u) != 0 ]] && echo -e "\n ��ʹ�� ${red}root ${none}�û����� ${yellow}~(^_^) ${none}\n" && exit 1
+[[ $(id -u) != 0 ]] && echo -e "\n 请使用 ${red}root ${none}用户运行 ${yellow}~(^_^) ${none}\n" && exit 1
 
 cmd="apt-get"
 
@@ -24,8 +24,8 @@ case $sys_bit in
 'amd64' | x86_64) ;;
 *)
     echo -e " 
-	 ��� ${red}��װ�ű�${none} ��֧�����ϵͳ�� ${yellow}(-_-) ${none}
-	��ע: ��֧�� Ubuntu 16+ / Debian 8+ / CentOS 7+ ϵͳ
+	 这个 ${red}安装脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}
+	备注: 仅支持 Ubuntu 16+ / Debian 8+ / CentOS 7+ 系统
 	" && exit 1
     ;;
 esac
@@ -41,8 +41,8 @@ if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl
 else
 
     echo -e " 
-	 ��� ${red}��װ�ű�${none} ��֧�����ϵͳ�� ${yellow}(-_-) ${none}
-	��ע: ��֧�� Ubuntu 16+ / Debian 8+ / CentOS 7+ ϵͳ
+	 这个 ${red}安装脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}
+	备注: 仅支持 Ubuntu 16+ / Debian 8+ / CentOS 7+ 系统
 	" && exit 1
 
 fi
@@ -52,7 +52,7 @@ if [ ! -d "/etc/minerProxy/" ]; then
 fi
 
 error() {
-    echo -e "\n$red �������$none\n"
+    echo -e "\n$red 输入错误！$none\n"
 }
 
 install_download() {
@@ -73,18 +73,18 @@ install_download() {
 
     if [[ ! -d ./minerProxy ]]; then
         echo
-        echo -e "$red ��¡�ű��ֿ������...$none"
+        echo -e "$red 克隆脚本仓库出错了...$none"
         echo
-        echo -e " �볢�����а�װ Git: ${green}$cmd install -y git $none ֮���ٰ�װ�˽ű�"
+        echo -e " 请尝试自行安装 Git: ${green}$cmd install -y git $none 之后再安装此脚本"
         echo
         exit 1
     fi
     cp -rf ./minerProxy /etc/
     if [[ ! -d $installPath ]]; then
         echo
-        echo -e "$red �����ļ�������...$none"
+        echo -e "$red 复制文件出错了...$none"
         echo
-        echo -e " ʹ�����°汾��Ubuntu����CentOS������"
+        echo -e " 使用最新版本的Ubuntu或者CentOS再试试"
         echo
         exit 1
     fi
@@ -93,27 +93,27 @@ install_download() {
 
 start_write_config() {
     echo
-    echo "������ɣ������ػ�"
+    echo "下载完成，开启守护"
     echo
     chmod a+x $installPath/minerProxy
     if [ -d "/etc/supervisor/conf/" ]; then
         rm /etc/supervisor/conf/minerProxy.conf -f
         echo "[program:minerProxy]" >>/etc/supervisor/conf/minerProxy.conf
-        echo "command=${installPath}/minerProxy" >>/etc/supervisor/conf/minerProxy.conf
+        echo "command=${installPath}/minerProxy_web" >>/etc/supervisor/conf/minerProxy.conf
         echo "directory=${installPath}/" >>/etc/supervisor/conf/minerProxy.conf
         echo "autostart=true" >>/etc/supervisor/conf/minerProxy.conf
         echo "autorestart=true" >>/etc/supervisor/conf/minerProxy.conf
     elif [ -d "/etc/supervisor/conf.d/" ]; then
         rm /etc/supervisor/conf.d/minerProxy.conf -f
         echo "[program:minerProxy]" >>/etc/supervisor/conf.d/minerProxy.conf
-        echo "command=${installPath}/minerProxy" >>/etc/supervisor/conf.d/minerProxy.conf
+        echo "command=${installPath}/minerProxy_web" >>/etc/supervisor/conf.d/minerProxy.conf
         echo "directory=${installPath}/" >>/etc/supervisor/conf.d/minerProxy.conf
         echo "autostart=true" >>/etc/supervisor/conf.d/minerProxy.conf
         echo "autorestart=true" >>/etc/supervisor/conf.d/minerProxy.conf
     elif [ -d "/etc/supervisord.d/" ]; then
         rm /etc/supervisord.d/minerProxy.ini -f
         echo "[program:minerProxy]" >>/etc/supervisord.d/minerProxy.ini
-        echo "command=${installPath}/minerProxy" >>/etc/supervisord.d/minerProxy.ini
+        echo "command=${installPath}/minerProxy_web" >>/etc/supervisord.d/minerProxy.ini
         echo "directory=${installPath}/" >>/etc/supervisord.d/minerProxy.ini
         echo "autostart=true" >>/etc/supervisord.d/minerProxy.ini
         echo "autorestart=true" >>/etc/supervisord.d/minerProxy.ini
@@ -121,7 +121,7 @@ start_write_config() {
         echo
         echo "----------------------------------------------------------------"
         echo
-        echo " Supervisor��װĿ¼û�ˣ���װʧ��"
+        echo " Supervisor安装目录没了，安装失败"
         echo
         exit 1
     fi
@@ -155,16 +155,16 @@ start_write_config() {
     echo "----------------------------------------------------------------"
     echo
 	if [[ "$changeLimit" = "y" ]]; then
-	  echo "ϵͳ�����������Ѿ����ˣ������һ�����б�������Ҫ����"
+	  echo "系统连接数限制已经改了，如果第一次运行本程序需要重启"
 	  echo
 	fi
     supervisorctl reload
-    echo "��������ǽ�˿�18888�Ѿ����ţ�������޷����ӣ��뵽�Ʒ����̿���̨������ȫ�飬���ж�Ӧ�Ķ˿�"
-    echo "���Է��ʱ���IP:18888"
+    echo "本机防火墙端口18888已经开放，如果还无法连接，请到云服务商控制台操作安全组，放行对应的端口"
+    echo "请以访问本机IP:18888"
     echo
-    echo "��װ���...�ػ�ģʽ����־����Ҫ��־������nohup ./minerProxy &��ʽ����"
+    echo "安装完成...守护模式无日志，需要日志的请以nohup ./minerProxy &方式运行"
 		echo
-		echo "���������ļ���/etc/minerProxy/config.yml����ҳ�˿��޸ĵ�¼����token"
+		echo "以下配置文件：/etc/minerProxy/config.yml，网页端可修改登录密码token"
     echo
     echo "[*---------]"
     sleep  1
@@ -197,19 +197,19 @@ uninstall() {
         rm /etc/supervisord.d/minerProxy.ini -f
     fi
     supervisorctl reload
-    echo -e "$yellow �ѹر�������${none}"
+    echo -e "$yellow 已关闭自启动${none}"
 }
 
 clear
 while :; do
     echo
-    echo "....... minerProxy һ����װ�ű� ......."
+    echo "....... minerProxy 一键安装脚本 ......."
     echo
-    echo " 1. ��ʼ��װ + �Զ�����"
+    echo " 1. 开始安装 + 自动运行"
     echo
-    echo " 2. ֹͣ + �ر��Զ�����"
+    echo " 2. 停止 + 关闭自动运行"
     echo
-    read -p "$(echo -e "��ѡ�� [${magenta}1-2$none]:")" choose
+    read -p "$(echo -e "请选择 [${magenta}1-2$none]:")" choose
     case $choose in
     1)
         install_download
