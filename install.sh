@@ -14,7 +14,7 @@ _magenta() { echo -e ${magenta}$*${none}; }
 _cyan() { echo -e ${cyan}$*${none}; }
 
 # Root
-[[ $(id -u) != 0 ]] && echo -e "\n è¯·ä½¿ç”¨ ${red}root ${none}ç”¨æˆ·è¿è¡Œ ${yellow}~(^_^) ${none}\n" && exit 1
+[[ $(id -u) != 0 ]] && echo -e "\n ÇëÊ¹ÓÃ ${red}root ${none}ÓÃ»§ÔËĞĞ ${yellow}~(^_^) ${none}\n" && exit 1
 
 cmd="apt-get"
 
@@ -24,8 +24,8 @@ case $sys_bit in
 'amd64' | x86_64) ;;
 *)
     echo -e " 
-	 è¿™ä¸ª ${red}å®‰è£…è„šæœ¬${none} ä¸æ”¯æŒä½ çš„ç³»ç»Ÿã€‚ ${yellow}(-_-) ${none}
-	å¤‡æ³¨: ä»…æ”¯æŒ Ubuntu 16+ / Debian 8+ / CentOS 7+ ç³»ç»Ÿ
+	 Õâ¸ö ${red}°²×°½Å±¾${none} ²»Ö§³ÖÄãµÄÏµÍ³¡£ ${yellow}(-_-) ${none}
+	±¸×¢: ½öÖ§³Ö Ubuntu 16+ / Debian 8+ / CentOS 7+ ÏµÍ³
 	" && exit 1
     ;;
 esac
@@ -41,8 +41,8 @@ if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl
 else
 
     echo -e " 
-	 è¿™ä¸ª ${red}å®‰è£…è„šæœ¬${none} ä¸æ”¯æŒä½ çš„ç³»ç»Ÿã€‚ ${yellow}(-_-) ${none}
-	å¤‡æ³¨: ä»…æ”¯æŒ Ubuntu 16+ / Debian 8+ / CentOS 7+ ç³»ç»Ÿ
+	 Õâ¸ö ${red}°²×°½Å±¾${none} ²»Ö§³ÖÄãµÄÏµÍ³¡£ ${yellow}(-_-) ${none}
+	±¸×¢: ½öÖ§³Ö Ubuntu 16+ / Debian 8+ / CentOS 7+ ÏµÍ³
 	" && exit 1
 
 fi
@@ -52,7 +52,7 @@ if [ ! -d "/etc/minerProxy/" ]; then
 fi
 
 error() {
-    echo -e "\n$red è¾“å…¥é”™è¯¯ï¼$none\n"
+    echo -e "\n$red ÊäÈë´íÎó£¡$none\n"
 }
 
 install_download() {
@@ -73,18 +73,18 @@ install_download() {
 
     if [[ ! -d ./minerProxy ]]; then
         echo
-        echo -e "$red å…‹éš†è„šæœ¬ä»“åº“å‡ºé”™äº†...$none"
+        echo -e "$red ¿ËÂ¡½Å±¾²Ö¿â³ö´íÁË...$none"
         echo
-        echo -e " è¯·å°è¯•è‡ªè¡Œå®‰è£… Git: ${green}$cmd install -y git $none ä¹‹åå†å®‰è£…æ­¤è„šæœ¬"
+        echo -e " Çë³¢ÊÔ×ÔĞĞ°²×° Git: ${green}$cmd install -y git $none Ö®ºóÔÙ°²×°´Ë½Å±¾"
         echo
         exit 1
     fi
     cp -rf ./minerProxy /etc/
     if [[ ! -d $installPath ]]; then
         echo
-        echo -e "$red å¤åˆ¶æ–‡ä»¶å‡ºé”™äº†...$none"
+        echo -e "$red ¸´ÖÆÎÄ¼ş³ö´íÁË...$none"
         echo
-        echo -e " ä½¿ç”¨æœ€æ–°ç‰ˆæœ¬çš„Ubuntuæˆ–è€…CentOSå†è¯•è¯•"
+        echo -e " Ê¹ÓÃ×îĞÂ°æ±¾µÄUbuntu»òÕßCentOSÔÙÊÔÊÔ"
         echo
         exit 1
     fi
@@ -93,7 +93,7 @@ install_download() {
 
 start_write_config() {
     echo
-    echo "ä¸‹è½½å®Œæˆï¼Œå¼€å¯å®ˆæŠ¤"
+    echo "ÏÂÔØÍê³É£¬¿ªÆôÊØ»¤"
     echo
     chmod a+x $installPath/minerProxy
     if [ -d "/etc/supervisor/conf/" ]; then
@@ -121,7 +121,7 @@ start_write_config() {
         echo
         echo "----------------------------------------------------------------"
         echo
-        echo " Supervisorå®‰è£…ç›®å½•æ²¡äº†ï¼Œå®‰è£…å¤±è´¥"
+        echo " Supervisor°²×°Ä¿Â¼Ã»ÁË£¬°²×°Ê§°Ü"
         echo
         exit 1
     fi
@@ -155,16 +155,16 @@ start_write_config() {
     echo "----------------------------------------------------------------"
     echo
 	if [[ "$changeLimit" = "y" ]]; then
-	  echo "ç³»ç»Ÿè¿æ¥æ•°é™åˆ¶å·²ç»æ”¹äº†ï¼Œå¦‚æœç¬¬ä¸€æ¬¡è¿è¡Œæœ¬ç¨‹åºéœ€è¦é‡å¯"
+	  echo "ÏµÍ³Á¬½ÓÊıÏŞÖÆÒÑ¾­¸ÄÁË£¬Èç¹ûµÚÒ»´ÎÔËĞĞ±¾³ÌĞòĞèÒªÖØÆô"
 	  echo
 	fi
     supervisorctl reload
-    echo "æœ¬æœºé˜²ç«å¢™ç«¯å£18888å·²ç»å¼€æ”¾ï¼Œå¦‚æœè¿˜æ— æ³•è¿æ¥ï¼Œè¯·åˆ°äº‘æœåŠ¡å•†æ§åˆ¶å°æ“ä½œå®‰å…¨ç»„ï¼Œæ”¾è¡Œå¯¹åº”çš„ç«¯å£"
-    echo "è¯·ä»¥è®¿é—®æœ¬æœºIP:18888"
+    echo "±¾»ú·À»ğÇ½¶Ë¿Ú18888ÒÑ¾­¿ª·Å£¬Èç¹û»¹ÎŞ·¨Á¬½Ó£¬Çëµ½ÔÆ·şÎñÉÌ¿ØÖÆÌ¨²Ù×÷°²È«×é£¬·ÅĞĞ¶ÔÓ¦µÄ¶Ë¿Ú"
+    echo "ÇëÒÔ·ÃÎÊ±¾»úIP:18888"
     echo
-    echo "å®‰è£…å®Œæˆ...å®ˆæŠ¤æ¨¡å¼æ— æ—¥å¿—ï¼Œéœ€è¦æ—¥å¿—çš„è¯·ä»¥nohup ./minerProxy &æ–¹å¼è¿è¡Œ"
+    echo "°²×°Íê³É...ÊØ»¤Ä£Ê½ÎŞÈÕÖ¾£¬ĞèÒªÈÕÖ¾µÄÇëÒÔnohup ./minerProxy &·½Ê½ÔËĞĞ"
 		echo
-		echo "ä»¥ä¸‹é…ç½®æ–‡ä»¶ï¼š/etc/minerProxy/config.ymlï¼Œç½‘é¡µç«¯å¯ä¿®æ”¹ç™»å½•å¯†ç token"
+		echo "ÒÔÏÂÅäÖÃÎÄ¼ş£º/etc/minerProxy/config.yml£¬ÍøÒ³¶Ë¿ÉĞŞ¸ÄµÇÂ¼ÃÜÂëtoken"
     echo
     echo "[*---------]"
     sleep  1
@@ -197,19 +197,19 @@ uninstall() {
         rm /etc/supervisord.d/minerProxy.ini -f
     fi
     supervisorctl reload
-    echo -e "$yellow å·²å…³é—­è‡ªå¯åŠ¨${none}"
+    echo -e "$yellow ÒÑ¹Ø±Õ×ÔÆô¶¯${none}"
 }
 
 clear
 while :; do
     echo
-    echo "....... minerProxy ä¸€é”®å®‰è£…è„šæœ¬ ......."
+    echo "....... minerProxy Ò»¼ü°²×°½Å±¾ ......."
     echo
-    echo " 1. å¼€å§‹å®‰è£… + è‡ªåŠ¨è¿è¡Œ"
+    echo " 1. ¿ªÊ¼°²×° + ×Ô¶¯ÔËĞĞ"
     echo
-    echo " 2. åœæ­¢ + å…³é—­è‡ªåŠ¨è¿è¡Œ"
+    echo " 2. Í£Ö¹ + ¹Ø±Õ×Ô¶¯ÔËĞĞ"
     echo
-    read -p "$(echo -e "è¯·é€‰æ‹© [${magenta}1-2$none]:")" choose
+    read -p "$(echo -e "ÇëÑ¡Ôñ [${magenta}1-2$none]:")" choose
     case $choose in
     1)
         install_download
