@@ -57,8 +57,8 @@ Linux开机自启
 >     supervisorctl reload  刷新配置，不然不生效
 
 Windows（下载minerProxy_web.exe)
->    双击minerProxy_web.exe
-运行后目录会多一个个 config.yml,双击打开它.用记事本打开查看token.
+>    双击minerProxy_web.exe 会弹出一个CMD窗口,
+就能看到token.
 在网页上输入127.0.0.1:18888 输入token后进去配置。
 
 tcp矿池(新建端口)是否开启ssl按钮需要关闭。
