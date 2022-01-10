@@ -115,6 +115,14 @@ k1pool
 
 >    tcp://cn.ethash.k1pool.com:5000
 
+独角兽
+
+>    tcp://eth.666pool.com:8558
+
+蜘蛛
+
+>    tcp://eth-asia.spiderpool.com:3867
+
 
 ssl矿池
 
