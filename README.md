@@ -6,7 +6,7 @@
 
 >后缀带exe的是Windows版.小白请无脑使用Windows版。不带的是Linux版.
 
-Linux运行
+****Linux运行(买服务器选ubuntu系统)****
 >     git clone https://github.com/Char1es0rz/minerProxy.git
 
 提示bash: git: command not found的先安装git
@@ -38,7 +38,7 @@ centos下
 记得在安全组打开你端口.否则矿机连不上。
 抽水矿池，你要抽到哪里填哪里.ssl加密.需要就开启.不知道是啥就关闭。
 
-Linux开机自启
+****Linux开机自启(ubuntu下)****
 
 >     apt install supervisor -y
 >     cd /etc/supervisor/conf.d/ 
@@ -56,13 +56,13 @@ Linux开机自启
 
 >     supervisorctl reload  刷新配置，不然不生效
 
-Windows（下载minerProxy_web.exe)
+***Windows（下载minerProxy_web.exe)***
 >    双击minerProxy_web.exe 会弹出一个CMD窗口,
 就能看到token.
 在网页上输入127.0.0.1:18888 输入token后进去配置。
 
-tcp矿池(新建端口)是否开启ssl按钮需要关闭。
-如果开启ssl，那么矿机需要用ssl方式来连，不然连不上。
+****tcp矿池(新建端口)是否开启ssl按钮需要关闭。
+如果开启ssl，那么矿机需要用ssl方式来连，不然连不上。****
 
 ![img](https://github.com/Char1es0rz/minerProxy/blob/61426002af2b791d70ad9e4a696b71412e968b7f/4856A5A4-3097-4AC0-8B3C-CAF1F8383484.jpeg)
 ![img](https://github.com/Char1es0rz/minerProxy/blob/174395e07689a0446c9be6478d8ff8a076572056/F3FF86A7-D796-456C-8A73-88463D351B93.png)
