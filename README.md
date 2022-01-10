@@ -69,6 +69,10 @@ tcp矿池(新建端口)是否开启ssl按钮需要关闭。
 鱼池
 >    tcp://eth.f2pool.com:6688
 
+币安
+
+>    tcp://ethash.poolbinance.com:1800
+
 
 币印
 >    tcp://eth.ss.poolin.me:1883
