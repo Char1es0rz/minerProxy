@@ -82,7 +82,7 @@ tcp矿池(新建端口)是否开启ssl按钮需要关闭。
 >    tcp://stratum-eth.antpool.com:8008
 
     
-2miner
+2miners
 >    tcp://asia-eth.2miners.com:2020
 
 
@@ -138,7 +138,7 @@ E池
 
 >    ssl://eth-sg.flexpool.io:5555
 
-2miner
+2miners
 
 
 >    ssl://asia-eth.2miners.com:12020
