@@ -4,9 +4,8 @@
 
 电报群https://t.me/+muk7Laxwh404ODM1
 
->后缀带exe的是Windows版.小白请无脑使用Windows版。不带的是Linux版.
 
-****Linux运行(买服务器选ubuntu系统)****
+****Linux运行(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)****
 >     git clone https://github.com/Char1es0rz/minerProxy.git
 
 提示bash: git: command not found的先安装git
