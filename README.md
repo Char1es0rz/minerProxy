@@ -1,7 +1,7 @@
-中转数据混淆加密，绝对安全保障，防止被查
+***中转数据混淆加密，绝对安全保障，防止被查***
 =================
 **开发费(纯转发模式没有开发费）**
-
+=================
 ![img](https://github.com/Char1es0rz/minerProxy/blob/6b4339bd1dcb19301ba1e3f00e4904c2bbf01d4b/7B7294F4-E785-44F2-BCF1-429E7FF84E15.png)
 
 电报群https://t.me/+muk7Laxwh404ODM1
