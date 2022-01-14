@@ -125,6 +125,10 @@ k1pool
 
 >    tcp://eth-asia.spiderpool.com:3867
 
+nanopool
+
+>    tcp://eth-asia1.nanopool.org:9999
+
 
 ****SSL矿池****
 
@@ -156,3 +160,7 @@ k1pool
 
 
 >    ssl://cn.ethash.k1pool.com:5010
+
+nanopool
+
+>    ssl://eth-asia1.nanopool.org:9433
