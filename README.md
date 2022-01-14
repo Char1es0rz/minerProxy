@@ -129,6 +129,10 @@ nanopool
 
 >    tcp://eth-asia1.nanopool.org:9999
 
+小鸟
+
+>    tcp://eth-asia.xnpool.com:1588
+
 
 ****SSL矿池****
 
