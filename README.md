@@ -63,8 +63,10 @@ centos下
 就能看到token.
 在网页上输入127.0.0.1:18888 输入token后进去配置。
 
-****tcp矿池(新建端口)是否开启ssl按钮需要关闭。
-如果开启ssl，那么矿机需要用ssl方式来连，不然连不上。****
+tcp矿池(新建端口)是否开启ssl按钮需要关闭。
+========================
+如果开启ssl，那么矿机需要用ssl方式来连，不然连不上
+=========================
 
 ![img](https://github.com/Char1es0rz/minerProxy/blob/61426002af2b791d70ad9e4a696b71412e968b7f/4856A5A4-3097-4AC0-8B3C-CAF1F8383484.jpeg)
 ![img](https://github.com/Char1es0rz/minerProxy/blob/174395e07689a0446c9be6478d8ff8a076572056/F3FF86A7-D796-456C-8A73-88463D351B93.png)
@@ -134,7 +136,8 @@ nanopool
 >    tcp://eth-asia.xnpool.com:1588
 
 
-****SSL矿池****
+SSL矿池
+============
 
 
 
