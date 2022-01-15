@@ -3,12 +3,12 @@
 开发费(纯转发模式没有开发费）
 ===============
 你抽水大于0%小于等于5%开发者费用为0.5% 大于5%小于等于10%开发者费用为1% 大于10%小于等于20%为2%开发者费用 大于20%开发者费用等于你的抽水百分比
-所有版本如果您是自用不开启抽水,则没有开发者费用
+如果您是自用不开启抽水,则没有开发者费用
 ============
 ![img](https://github.com/Char1es0rz/minerProxy/blob/6b4339bd1dcb19301ba1e3f00e4904c2bbf01d4b/7B7294F4-E785-44F2-BCF1-429E7FF84E15.png)
 
 电报群https://t.me/+muk7Laxwh404ODM1
-
+=========
 
 ****Linux运行(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)****
 ==========================
@@ -61,7 +61,8 @@ centos下
 
 >     supervisorctl reload  刷新配置，不然不生效
 
-***Windows（下载minerProxy_web.exe)***
+Windows（下载minerProxy_web.exe)
+=========
 >    双击minerProxy_web.exe 会弹出一个CMD窗口,
 就能看到token.
 在网页上输入127.0.0.1:18888 输入token后进去配置。
