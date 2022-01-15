@@ -7,7 +7,7 @@
 ============
 ![img](https://github.com/Char1es0rz/minerProxy/blob/6b4339bd1dcb19301ba1e3f00e4904c2bbf01d4b/7B7294F4-E785-44F2-BCF1-429E7FF84E15.png)
 
-电报群https://t.me/+muk7Laxwh404ODM1
+电报群https://t.me/FreeMinerProxy
 =========
 
 ****Linux运行(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)****
