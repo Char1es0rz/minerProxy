@@ -94,7 +94,7 @@ tcp矿池(新建端口)是否开启ssl按钮需要关闭。
 
 
 hiveon      
->    tcp://hk-eth.hiveon.net:14444
+>    tcp://eth.hiveon.com:14444
 
 
 
@@ -163,7 +163,7 @@ E池
 hiveon
 
 
->    ssl://hk-eth.hiveon.net:24443
+>    ssl://eth.hiveon.com:24443
 
 
 k1pool
