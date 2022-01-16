@@ -29,10 +29,9 @@ centos下
 >     chmod a+x minerProxy_web
 后台运行
 >     nohup ./minerProxy_web &
-后台运行时查看
+后台运行时查看token
 >     tail -f nohup.out 查看后退出按ctrl+c
-查看token
->     vi config.yml 退出按ctrl➕Z
+
 临时修改tcp连接数
 >     ulimit -n 10240
 网页配置矿池
