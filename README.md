@@ -62,6 +62,7 @@ Linux开机自启(ubuntu下)
 >     supervisorctl reload  刷新配置，不然不生效
 
 Windows（下载minerProxy_web.exe)
+[点击下载](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)
 =========
 >    双击minerProxy_web.exe 会弹出一个CMD窗口,
 就能看到token.
