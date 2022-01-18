@@ -140,6 +140,10 @@ nanopool
 
 >    tcp://eth-asia.xnpool.com:1588
 
+MiningPoolHub
+
+>    tcp://ia.ethash-hub.miningpoolhub.com:20535
+
 
 SSL矿池
 ============
