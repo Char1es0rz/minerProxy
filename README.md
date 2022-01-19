@@ -10,7 +10,7 @@
 电报群https://t.me/FreeMinerProxy
 =========
 
-****Linux运行(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)****
+1:Linux运行(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)
 ==========================
 >     git clone https://github.com/Char1es0rz/minerProxy.git
 
@@ -61,7 +61,13 @@ Linux开机自启(ubuntu下)
 
 >     supervisorctl reload  刷新配置，不然不生效
 
-Windows（下载minerProxy_web.exe)
+linux如果不开机自启.服务器重启后，转发软件不会自动运行
+需要进入目录.在后台运行下.命令如下
+===========
+>     cd minerProxy
+>     nohup ./minerProxy_web &
+
+2:Windows（下载minerProxy_web.exe)
 [点击下载](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)
 =========
 >    双击minerProxy_web.exe 会弹出一个CMD窗口,
