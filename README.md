@@ -100,12 +100,12 @@ hiveon
 
 
 
-E池        
+Ethermine       
 >    tcp://asia2.ethermine.org:4444
 
 
 
-凤池        
+Flex    
 >    tcp://eth-sg.flexpool.io:4444          
 
 viabtc
@@ -151,12 +151,12 @@ SSL矿池
 
 
 
-E池
+Ethermine
 
 >    ssl://asia2.ethermine.org:5555
 
 
-凤池
+Flex
 
 >    ssl://eth-sg.flexpool.io:5555
 
