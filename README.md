@@ -62,7 +62,7 @@ Linux开机自启(ubuntu下)
 >     user=root
 
 >     ctrl+字母o  保存 按下回车键
->     ctrl+字母z  退出
+>     ctrl+字母x  退出
 
 >     supervisorctl reload  刷新配置，不然不生效
 
