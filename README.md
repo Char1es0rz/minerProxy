@@ -31,6 +31,11 @@ centos下
 >     nohup ./minerProxy_web &
 后台运行时查看token
 >     tail -f nohup.out 查看后退出按ctrl+c
+修改默认token跟端口（强烈建议修改掉默认端口。防止被扫描）
+=========
+>     vi config.yml 按字母i后按方向键修改默认token跟端口.修改好后，
+>     按下ESC键.在输入wq! 在按下回车键就修改成功呢。修改成功后需要杀掉进程在拉起才会生效。
+>     杀掉进程 killall minerProxy_web 拉起进程 nohup ./minerProxy_web &
 
 临时修改tcp连接数
 >     ulimit -n 10240
