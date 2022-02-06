@@ -1,4 +1,4 @@
-软件支持Windows跟Linux，小白请无脑使用Windows版[Windows版下载点我](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)，[Windows守护进程工具下载](https://github.com/Char1es0rz/minerProxy/blob/6ed2b3629ebe725d577c22fc4ed604929544081a/windows%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B.bat)中转数据混淆加密，绝对安全。防止被查水表。
+软件支持Windows跟Linux，小白请无脑使用Windows版[Windows版下载点我](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)，[Windows守护进程工具下载](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/windows守护进程.bat)，中转数据混淆加密，绝对安全。防止被查水表。
 =================
 开发费(纯转发模式没有开发费）
 ===============
