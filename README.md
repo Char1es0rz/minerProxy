@@ -9,7 +9,9 @@
 
 电报群https://t.me/FreeMinerProxy
 =========
-Linux一键脚本。
+Linux一键脚本,必须root用户.如果不是请用sudo -i进入
+root用户在执行脚本.脚本执行完毕后需要重启服务器.否则
+连接数不生效。
 ========
 >     bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
 1:Linux运行(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)
