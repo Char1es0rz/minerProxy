@@ -41,8 +41,8 @@ centos下
 >     按下Ctrl➕字母o后再按下回车键。然后再按ctrl➕字母x退出。修改成功后需要杀掉进程在拉起才会生效。
 >     杀掉进程 killall minerProxy_web 拉起进程 nohup ./minerProxy_web &
 
-临时修改tcp连接数
->     ulimit -n 10240
+查看tcp连接数是否修改为60000
+>     ulimit -n
 网页配置矿池
 >     vpsip:18888 例如：1.8.9.2:18888 VPS入站规则添加TCP协议的18888端口，否则外网不能访问。
 注意网页配置
