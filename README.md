@@ -9,14 +9,14 @@
 
 电报群https://t.me/FreeMinerProxy
 =========
-Linux一键全自动脚本安装,必须root用户.如果不是请用sudo -i进入
+1:Linux一键全自动脚本安装,必须root用户.如果不是请用sudo -i进入
 root用户在执行脚本.脚本执行完毕后需要重启服务器.否则
 连接数不生效（脚本包含开机自动运行，自动修改TCP连接数限制）如果执行自动脚本
 你看到的是乱码，直接按1就OK。1是全自动安装➕运行。
 ========
 >     bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
-1:Linux手动安装(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)
-==========================
+2:Linux手动安装(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)
+
 >     git clone https://github.com/Char1es0rz/minerProxy.git
 
 提示bash: git: command not found的先安装git
