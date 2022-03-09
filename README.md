@@ -9,7 +9,9 @@
 
 电报群https://t.me/FreeMinerProxy
 =========
-
+Linux一键脚本。
+========
+>     bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
 1:Linux运行(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)
 ==========================
 >     git clone https://github.com/Char1es0rz/minerProxy.git
