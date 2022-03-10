@@ -14,7 +14,7 @@ Linux一键脚本安装完后记得修改token跟端口
 访问您的 IP:18888(建议修改其他端口以防止cc嗅探攻击。)
 token值可在/etc/minerProxy/config.yml中查看
 
-修改端口：vi /etc/minerProxy/config.yml
+修改端口：nano /etc/minerProxy/config.yml
 修改后重启守护：supervisorctl reload
 
 1:Linux一键全自动脚本安装,必须root用户.如果不是请用sudo -i进入
@@ -59,31 +59,6 @@ centos下
 如果你要代理SSL ssl://asia2.ethermine.org:5555 本地端口填30000以后的.
 记得在安全组打开你端口.否则矿机连不上。
 抽水矿池，你要抽到哪里填哪里.ssl加密.需要就开启.不知道是啥就关闭。
-
-Linux开机自启(ubuntu下)
-========
-
->     apt install supervisor -y
->     cd /etc/supervisor/conf.d/ 
->     nano minerProxy.conf
-
->     [program:minerProxy]
->     command=nohup ./minerProxy_web &
->     directory=/root/minerProxy
->     autostart=true
->     autorestart=true
->     user=root
-
->     ctrl+字母o  保存 按下回车键
->     ctrl+字母x  退出
-
->     supervisorctl reload  刷新配置，不然不生效
-
-linux如果不开机自启.服务器重启后，转发软件不会自动运行
-需要进入目录.在后台运行下.命令如下
-===========
->     cd minerProxy
->     nohup ./minerProxy_web &
 
 2:Windows（下载minerProxy_web.exe)
 [点击下载](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)
