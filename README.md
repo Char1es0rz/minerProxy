@@ -81,8 +81,9 @@ linux如果不开机自启.服务器重启后，转发软件不会自动运行
 [点击下载](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)
 =========
 >    双击minerProxy_web.exe 会弹出一个CMD窗口,
-就能看到token.
-在网页上输入127.0.0.1:18888 输入token后进去配置。
+就能看到token.目录下会多个config.yml文件，用记事本
+打开，修改token跟端口后，关闭CMD窗口在打开就生效呢。
+在网页上输入127.0.0.1:你修改的端口号 输入token后进去配置。
 
 tcp矿池(新建端口)是否开启ssl按钮需要关闭。
 ========================
