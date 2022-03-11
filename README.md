@@ -18,7 +18,7 @@ token值可在/etc/minerProxy/config.yml中查看
 
 修改后重启守护:supervisorctl reload
 
-提示 curl: command not found的先安装curl
+运行Linux一键脚本提示 curl: command not found的先安装curl
 =======
 ubuntu/debian 系统安装 curl 方法:
 >     apt-get update -y && apt-get install curl -y
