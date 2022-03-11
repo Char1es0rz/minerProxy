@@ -14,8 +14,9 @@ Linux一键脚本安装完后记得修改token跟端口
 访问您的 IP:18888(建议修改其他端口以防止cc嗅探攻击。)
 token值可在/etc/minerProxy/config.yml中查看
 
-修改端口：nano /etc/minerProxy/config.yml
-修改后重启守护：supervisorctl reload
+修改端口:nano /etc/minerProxy/config.yml
+
+修改后重启守护:supervisorctl reload
 
 1:Linux一键全自动脚本安装,必须root用户.如果不是请用sudo -i进入
 root用户在执行脚本.脚本执行完毕后需要重启服务器.否则
