@@ -14,7 +14,7 @@ Linux一键脚本安装完后记得修改token跟端口
 访问您的 IP:18888(建议修改其他端口以防止cc嗅探攻击。)
 token值可在/etc/minerProxy/config.yml中查看
 
-修改端口:nano /etc/minerProxy/config.yml
+修改端口:nano /etc/minerProxy/config.yml   注释（修改好后，按下Ctrl➕字母o后再按下回车键。然后再按ctrl➕字母x退出）
 
 修改后重启守护:supervisorctl reload
 
@@ -27,14 +27,15 @@ centos 系统安装 curl 方法:
 
 安装好 curl 之后就能安装脚本了
 
-1:Linux一键全自动脚本安装,必须root用户.如果不是请用sudo -i进入
+1:Linux一键全自动脚本安装
+========
+必须root用户.如果不是请用sudo -i进入
 root用户在执行脚本.脚本执行完毕后需要重启服务器.否则
 连接数不生效（脚本包含开机自动运行，自动修改TCP连接数限制）如果执行自动脚本
-你看到的是乱码，直接按1就OK。1是全自动安装➕运行。
-========
+你看到的是乱码，直接按1就OK。1是全自动安装加运行。
 >     bash <(curl -s -L https://bit.ly/3vUyhaw)
-2:Linux手动安装(强烈建议买服务器选ubuntu系统.linux稳定.耗资源小.1核1G可以带600台)
-
+2:Linux手动安装
+=======
 >     git clone https://github.com/Char1es0rz/minerProxy.git
 
 提示bash: git: command not found的先安装git
