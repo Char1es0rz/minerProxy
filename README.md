@@ -18,6 +18,15 @@ token值可在/etc/minerProxy/config.yml中查看
 
 修改后重启守护:supervisorctl reload
 
+提示 curl: command not found的先安装curl
+=======
+ubuntu/debian 系统安装 curl 方法:
+>     apt-get update -y && apt-get install curl -y
+centos 系统安装 curl 方法:
+>     yum update -y && yum install curl -y
+
+安装好 curl 之后就能安装脚本了
+
 1:Linux一键全自动脚本安装,必须root用户.如果不是请用sudo -i进入
 root用户在执行脚本.脚本执行完毕后需要重启服务器.否则
 连接数不生效（脚本包含开机自动运行，自动修改TCP连接数限制）如果执行自动脚本
