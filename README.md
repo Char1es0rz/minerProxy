@@ -71,6 +71,9 @@ centos下
 
 查看tcp连接数
 >     ulimit -n
+
+停止Linux自带防火墙
+>     service firewalld stop
 网页配置矿池
 >     vpsip:18888 例如：1.8.9.2:18888 VPS入站规则添加TCP协议的18888端口，否则外网不能访问。
 注意网页配置
