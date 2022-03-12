@@ -31,10 +31,10 @@ centos 系统安装 curl 方法:
 ========
 
 ubuntu/debian系统安装Wget
->      apt-get update -y && apt-get install wget -y
+>     apt-get update -y && apt-get install wget -y
 
 centos系统安装Wget
->      yum update -y && yum install wget -y
+>     yum update -y && yum install wget -y
 
 1:Linux一键全自动脚本安装
 ========
