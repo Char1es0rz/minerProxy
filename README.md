@@ -82,7 +82,7 @@ centos下
 记得在安全组打开你端口.否则矿机连不上。
 抽水矿池，你要抽到哪里填哪里.ssl加密.需要就开启.不知道是啥就关闭。
 
-2:Windows（下载minerProxy_web.exe)
+3:Windows（下载minerProxy_web.exe)
 [点击下载](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)
 =========
 >    双击minerProxy_web.exe 会弹出一个CMD窗口,
