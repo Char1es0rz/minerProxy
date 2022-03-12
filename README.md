@@ -30,10 +30,11 @@ centos 系统安装 curl 方法:
 如果运行Linux一键脚本后卡住不动
 ========
 
-ubuntu/debian系统 apt-get update -y && apt-get install wget -y
+ubuntu/debian系统安装Wget
+>      apt-get update -y && apt-get install
 
-
-centos系统 yum update -y && yum install wget -y
+centos系统安装Wget
+>      yum update -y && yum install wget -y
 
 1:Linux一键全自动脚本安装
 ========
