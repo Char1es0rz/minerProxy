@@ -27,6 +27,14 @@ centos 系统安装 curl 方法:
 
 安装好 curl 之后就能安装脚本了
 
+如果运行Linux一键脚本后卡住不动
+========
+
+ubuntu/debian系统 apt-get update -y && apt-get install wget -y
+
+
+centos系统 yum update -y && yum install wget -y
+
 1:Linux一键全自动脚本安装
 ========
 必须root用户.如果不是请用sudo -i进入
