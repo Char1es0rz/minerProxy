@@ -37,11 +37,13 @@ centos系统安装Wget
 ubuntu下
 
 >    apt update
+   
 >    apt install git
 
 centos下
 
 >    yum update
+  
 >    yum install git
 
 3:Windows（下载minerProxy_web.exe)
