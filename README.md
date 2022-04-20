@@ -15,7 +15,7 @@ ubuntu/debian 系统安装 curl 方法:
 centos 系统安装 curl 方法:
 
 >      yum update -y && yum install curl -y
-安装好 curl 之后就能安装脚本了
+
 
 如果运行Linux一键脚本后卡住不动
 ubuntu/debian系统安装Wget
@@ -28,12 +28,13 @@ centos系统安装Wget
 提示bash: git: command not found的先安装git
 ubuntu下
 
-apt update
-apt install git
+>     apt update
+>     apt install git
+
 centos下
 
-yum update
-yum install git
+>     yum update
+>     yum install git
 
 3:Windows（下载minerProxy_web.exe)
 [点击下载](https://raw.githubusercontent.com/Char1es0rz/minerProxy/3.0.3-web版/minerProxy_web.exe)
