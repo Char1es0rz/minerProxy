@@ -1,12 +1,15 @@
-1:Linux老版本一键全自动脚本安装
+1:Linux老版本（303）一键全自动脚本安装
 >      bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
 
-2:linux新版本一键全自动脚本安装
+2:linux新版本（400）一键全自动脚本安装
 >      wget https://raw.githubusercontent.com/FreeMinerProxy/FreeMinerProxy/main/tool.sh && bash tool.sh
 查看运行情况
 >      screen -r tpminer
 退出查看运行情况 键盘键入
 >      ctrl + a + d
+
+======================================
+# 安装linx脚本出现问题请看这里
 
 运行Linux一键脚本提示 curl: command not found的先安装curl
 ubuntu/debian 系统安装 curl 方法:
