@@ -14,6 +14,7 @@
 # 安装linux脚本出现问题请看这里
 
 运行Linux一键脚本提示 curl: command not found的先安装curl
+
 ubuntu/debian 系统安装 curl 方法:
 
 >      apt-get update -y && apt-get install curl -y
@@ -23,6 +24,7 @@ centos 系统安装 curl 方法:
 
 
 如果运行Linux一键脚本后卡住不动
+
 ubuntu/debian系统安装Wget
 
 >      apt-get update -y && apt-get install wget -y
@@ -31,6 +33,7 @@ centos系统安装Wget
 >      yum update -y && yum install wget -y
 
 提示bash: git: command not found的先安装git
+
 ubuntu下
 
 >     apt update
