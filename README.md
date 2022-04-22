@@ -1,9 +1,9 @@
-1:Linux老版本（303）一键全自动脚本安装
+1:Linux老版本一键全自动脚本安装
 >     bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
       
 ===========================================================================
 
-2:linux新版本（400）一键全自动脚本安装
+2:linux新版本一键全自动脚本安装(支持动态修改抽水比例）
 >     wget https://raw.githubusercontent.com/FreeMinerProxy/FreeMinerProxy/main/tool.sh && bash tool.sh
 查看运行情况
 >     screen -r tpminer
