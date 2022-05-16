@@ -1,6 +1,7 @@
 1:Linux老版本一键全自动脚本安装
 >     bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
-      
+修改端口：nano /etc/minerProxy/config.yml 修改好后按Ctrl+字母o保存，在按ctrl+字母x退出。
+修改后重启守护：supervisorctl reload    
 ===========================================================================
 
 2:linux新版本一键全自动脚本安装(支持动态修改抽水比例）
