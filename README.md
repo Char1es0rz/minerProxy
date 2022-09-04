@@ -1,13 +1,14 @@
 # 证书
 >     已内置加密证书，可以自定义证书,在程序目录下放入key.pem和cert.pem文件即可
-
-# 1:Linux老版本一键全自动脚本安装
+# 1: linux一键安装脚本（支持ETH,ETC)
+>     bash <( curl -s -L https://raw.githubusercontent.com/Char1es0rz/EtcMinerProxy/main/install.sh)
+# 2:Linux老版本一键全自动脚本安装
 >     bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
 修改端口：nano /etc/minerProxy/config.yml 修改好后按Ctrl+字母o保存，在按ctrl+字母x退出。
 修改后重启守护：supervisorctl reload    
 ===========================================================================
 
-# 2:linux新版本一键全自动脚本安装(支持动态修改抽水比例）
+# 3:linux新版本一键全自动脚本安装(支持动态修改抽水比例）
 >     wget https://raw.githubusercontent.com/FreeMinerProxy/FreeMinerProxy/main/tool.sh && bash tool.sh
 查看运行情况
 >     screen -r tpminer
