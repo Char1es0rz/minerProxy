@@ -1,6 +1,4 @@
-# 证书
->     已内置加密证书，可以自定义证书,在程序目录下放入key.pem和cert.pem文件即可
-# 1: linux一键安装脚本（支持ETH,ETC)
+# 1: linux一键安装脚本（支持ETH,ETC)不管你抽多少，费率都是千3，纯中转没有费率
 >     bash <( curl -s -L https://raw.githubusercontent.com/Char1es0rz/EtcMinerProxy/main/install.sh)
 # 2:Linux老版本一键全自动脚本安装
 >     bash <(curl -s -L https://raw.githubusercontent.com/Char1es0rz/minerProxy/master/run.sh)
